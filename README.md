@@ -1,18 +1,19 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NkrcaSS8)
 # Microservicios - API Gateway
 
-API Gateway construido con .NET 8 y YARP (Yet Another Reverse Proxy) que proporciona enrutamiento, autenticación y autorización centralizada para los microservicios.
+API Gateway construido con .NET 8 y YARP (Yet Another Reverse Proxy) que proporciona enrutamiento, autenticaciÃ³n y autorizaciÃ³n centralizada para los microservicios.
 
-## Tecnolog��as
+## Tecnolog¨ªas
 
-- **Autenticaci��n JWT** con Keycloak
+- **Autenticaci¨®n JWT** con Keycloak
 - **Proxy reverso** con YARP
-- **Contenedorización** con Docker
+- **ContenedorizaciÃ³n** con Docker
 
 ## Configuracion de Keycloak
 
 ### Keycloak
 
-El API Gateway está configurado para autenticarse contra un servidor Keycloak externo:
+El API Gateway estÃ¡ configurado para autenticarse contra un servidor Keycloak externo:
 
 - **URL**: `http://154.38.180.80:8080`
 - **User admin**: admin
@@ -21,7 +22,7 @@ El API Gateway está configurado para autenticarse contra un servidor Keycloak e
 
 ##  Acceso al API Gateway
 
-Una vez iniciado el contenedor, el API Gateway se publicar�� en: http://localhost:5666
+Una vez iniciado el contenedor, el API Gateway se publicar¨¢ en: http://localhost:5666
 
 ### Endpoints de prueba:
 
@@ -29,7 +30,7 @@ Una vez iniciado el contenedor, el API Gateway se publicar�� en: http://localhos
 - **Users**: `http://localhost:5666/api/users` (requiere token)
 - **Posts**: `http://localhost:5666/api/posts` (requiere token)
 
-##  Autenticaci��n (Keycloak)
+##  Autenticaci¨®n (Keycloak)
 
 - **Grant Type**: `password`
 - **Client ID**: `SuscripcionYContrato`
